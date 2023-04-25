@@ -1,0 +1,154 @@
+.drop-down {
+  position: absolute;
+  top: 80px;
+  left: 222px;
+  border-radius: 20px;
+  display: none;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+  font-family: var(--FF-NAV);
+  width: 71%;
+  max-width: 975px;
+  overflow: hidden;
+}
+
+.drop-down__ul {
+  background: linear-gradient(
+    90deg,
+    rgba(24, 174, 255, 0),
+    rgba(24, 174, 255, 0.06)
+  );
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.drop-down__ul li {
+  list-style-type: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #382153;
+}
+
+.drop-down__article {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 20px 0px 40px;
+  width: 100%;
+}
+
+.drop-down__h2 {
+  font-size: 2.3rem;
+  font-weight: 750;
+  line-height: 1.1;
+  color: #382153;
+}
+
+.drop-down__p {
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+  width: 620px;
+}
+
+/* || backgrounds and animations */
+.sales::before {
+  position: absolute;
+  content: url(../../images/header/sales-features.png);
+  bottom: -7px;
+  right: -2px;
+  z-index: -1;
+}
+
+.sales::after {
+  position: absolute;
+  content: url(../../images/header/sales-bg.png);
+  bottom: -7px;
+  right: 0;
+  z-index: -2;
+}
+
+.marketing::before {
+  position: absolute;
+  content: url(../../images/header/marketing-features.png);
+  bottom: -7px;
+  right: -2px;
+  z-index: -1;
+}
+
+.marketing::after {
+  position: absolute;
+  content: url(../../images/header/marketing-bg.png);
+  bottom: -7px;
+  right: 0;
+  z-index: -2;
+}
+
+.managers::before {
+  position: absolute;
+  content: url(../../images/header/manager-features.png);
+  bottom: -7px;
+  right: -2px;
+  z-index: -1;
+}
+
+.managers::after {
+  position: absolute;
+  content: url(../../images/header/manager-bg.png);
+  bottom: -7px;
+  right: 0;
+  z-index: -2;
+}
+
+.agencies::before {
+  position: absolute;
+  content: url(../../images/header/agency-features.png);
+  bottom: -7px;
+  right: -2px;
+  z-index: -1;
+}
+
+.agencies::after {
+  position: absolute;
+  content: url(../../images/header/agency-bg.png);
+  bottom: -7px;
+  right: 0;
+  z-index: -2;
+}
+
+.vendors::before {
+  position: absolute;
+  content: url(../../images/header/vendor-features.png);
+  bottom: -7px;
+  right: -2px;
+  z-index: -1;
+}
+
+.vendors::after {
+  position: absolute;
+  content: url(../../images/header/vendor-bg.png);
+  bottom: -7px;
+  right: 0;
+  z-index: -2;
+}
+
+/* || Activities */
+
+.active {
+  color: #7e5dff;
+}
+
+.article-active {
+  display: flex;
+}
+
+.drop-down--none {
+  display: none;
+}
+
+.drop-down--shown {
+  display: flex;
+}

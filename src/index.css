@@ -7,8 +7,16 @@
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* || VARIABLES */
+html {
+  --FF-NAV: Nunito, sans-serif;
+  --FF-ROBOTO: Roboto, sans-serif;
+}
